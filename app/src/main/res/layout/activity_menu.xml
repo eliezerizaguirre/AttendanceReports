@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityMenu">
+
+    <FrameLayout
+        android:layout_width="408dp"
+        android:layout_height="735dp"
+        android:textAlignment="center"
+        android:textDirection="locale"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/multicable" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="BIENVENIDO/A"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtUsuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#041159"
+                        android:textSize="24sp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/btnCrear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableBottom="@drawable/crear"
+                        android:text="Crear Usuarios"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btnMarcar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableBottom="@drawable/map"
+                        android:text="REGISTRAR UBICACION"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btnReporte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableBottom="@drawable/reprot"
+                        android:text="Reporte de Asistencia"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btnPerfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableBottom="@drawable/profile"
+                        android:text="Perfil"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btnInformacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableBottom="@drawable/info"
+                        android:text="Sobre la App"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
